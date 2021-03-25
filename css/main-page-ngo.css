@@ -1,0 +1,30 @@
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-image: linear-gradient(to bottom right, #f5c0c0, #ffffff, #f2b4b4);
+	background-color: #cccccc;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+}
+/* navbar */
+.navbar.bg-light {
+	background-color: rgb(6, 46, 56) !important;
+}
+.nav-link {
+	color: #fcd7be !important;
+	font-size: 1.2rem !important;
+	font-weight: 500 !important;
+	margin: 0 20px !important;
+}
+.navbar-nav {
+	margin-left: 40vw !important;
+}
+.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	color: #fcd7be !important;
+	font-weight: 900;
+}

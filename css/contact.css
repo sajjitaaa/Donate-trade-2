@@ -1,0 +1,219 @@
+
+
+/* navbar */
+.navbar.bg-light {
+	background-color: rgb(6, 46, 56) !important;
+}
+.nav-link {
+	color: #fcd7be !important;
+	font-size: 1.2rem !important;
+	font-weight: 520 !important;
+	margin: 0 20px !important;
+}
+.navbar-nav {
+	margin-left: 50vw !important;
+}
+.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	color: #fcd7be !important;
+	font-weight: 900;
+}
+
+body {
+	background-image: linear-gradient(to bottom right, #fda8a8, #ffffff, #ffaaaa);
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: fantasy;
+}
+
+.contactbox {
+	width: 380px;
+	height: 480px;
+	background: rgba(0, 0, 0, 0.74);
+	margin-top: 90px;
+	margin-bottom: 100px;
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	padding: 70px 30px;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	border-radius: 10%;
+}
+
+.icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.contactbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.contactbox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contactbox input[type='text'],
+input[type='email'] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.contactbox input[type='text']:hover,
+input[type='email']:hover {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: rgb(4, 252, 252);
+	font-size: 17px;
+}
+
+.contactbox input[type='submit'] {
+	margin-top: 20px;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 20px;
+}
+
+.contactbox input[type='submit']:hover {
+	cursor: pointer;
+	background: #28a2db;
+	color: #000;
+	font-size: 25px;
+	border-radius: 22px;
+	height: 42px;
+}
+
+@media screen and (max-width: 1000px) {
+	.list {
+		margin: 10px;
+	}
+
+	.logo {
+		height: 10vw;
+		width: 10vw;
+		border-radius: 50%;
+	}
+
+	.list-links {
+		font-size: 4vw;
+		font-weight: 300;
+
+		padding: 20px 20px;
+		text-decoration: none;
+	}
+
+	.contactbox {
+		margin-bottom: 100px;
+		width: 80vw;
+		height: 55vh;
+		background: rgba(0, 0, 0, 0.74);
+		margin-top: 80px;
+		color: #fff;
+		position: relative;
+		box-sizing: border-box;
+		padding: 70px 30px;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, 10%);
+		border-radius: 10%;
+	}
+
+	.icon {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		position: absolute;
+		top: -50px;
+		left: calc(50% - 50px);
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0 0 15px;
+		text-align: center;
+	}
+
+	.contactbox p {
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+
+	.contactbox input {
+		width: 60vw;
+		margin-bottom: 20px;
+	}
+
+	.contactbox input[type='text'],
+	input[type='email'] {
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline: none;
+		height: 40px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.contactbox input[type='text']:hover,
+	input[type='email']:hover {
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline: none;
+		height: 40px;
+		color: rgb(4, 252, 252);
+		font-size: 17px;
+	}
+
+	.contactbox input[type='submit'] {
+		margin-top: 10px;
+
+		border: none;
+		outline: none;
+		height: 35px;
+		background: #fb2525;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 20px;
+	}
+
+	.contactbox input[type='submit']:hover {
+		cursor: pointer;
+		background: #28a2db;
+		color: #000;
+		font-size: 25px;
+		border-radius: 22px;
+		height: 42px;
+	}
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Trade | Home</title>
+    <link rel="stylesheet" href="css/homestyle.css" />
+    <!-- css style sheet -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/e58d4fb0ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- various links for bootstrap -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- google fonts link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylecb.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- ChatBot -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </head>
+
+  <body>
+    <!-- ChatBot -->
+    <div class="chat_icon">
+      <i class="fas fa-comment-dots"></i>
+      <h6 class="chat_icon_text">Chat Assistant</h6>
+    </div>
+
+    <div class="chat_box">
+      <div class="my-conv-form-wrapper">
+        <form action="" method="GET" class="hidden">
+          <select
+            data-conv-question="Hello! How can I help you"
+            name="category"
+          >
+            <option value="Volunteer">I want to Volunteer ?</option>
+            <option value="Donate">I want to make a Donation ?</option>
+          </select>
+
+          <div data-conv-fork="category">
+            <div data-conv-case="Volunteer">
+              <input
+                type="text"
+                name="cityName"
+                data-conv-question="Please, enter your city name"
+              />
+            </div>
+            <div data-conv-case="Donate" data-conv-fork="first-question2">
+              <input
+                type="text"
+                name="cityName"
+                data-conv-question="Please, enter your city name"
+              />
+            </div>
+          </div>
+
+          <input
+            type="text"
+            name="name"
+            data-conv-question="Please, Enter your name"
+          />
+
+          <input
+            type="text"
+            data-conv-question="Hi {name}, <br> It's a pleasure to meet you."
+            data-no-answer="true"
+          />
+
+          <input
+            data-conv-question="Enter your e-mail"
+            data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+            type="email"
+            name="email"
+            required
+            placeholder="What's your e-mail?"
+          />
+
+          <select data-conv-question="Please Confirm">
+            <option value="Yes"><a href="Contact.html">Confirm</a></option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <!-- ChatBot end -->
+
+    <section class="title-navbar">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DONATE TRADE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">About Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle btn-account btn"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="loginform.html">Login</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="register.html">Sign up</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    
+    <!-- carousel -->
+    <section class="about-us container-fluid">
+      <div style="margin-left: 10%; color: rgb(248, 230, 130);"
+      class="block-area carousel-inner">
+          <h2>About Us</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, consequatur. Delectus excepturi corporis laudantium ullam adipisci, fugiat nam autem necessitatibus alias unde pariatur dolorum esse id neque ducimus nemo deserunt similique dolores repellendus voluptatem ut animi. Minima, ex esse? Excepturi error, ratione dolores vel vitae ut at facere numquam repellendus itaque aliquid suscipit tenetur consequatur voluptatum corporis blanditiis, quos nihil. Aspernatur, corrupti. Magni quo id libero quod voluptatem fugiat reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et similique nemo libero. Ipsam non sit sint, earum optio obcaecati repellat ducimus vel. Iusto qui pariatur ex saepe eius ad nobis, eveniet amet cupiditate dolor! Doloribus suscipit facilis ipsa velit reiciendis placeat temporibus, fugit explicabo voluptatibus soluta maiores corporis fuga aperiam debitis eaque veniam cupiditate. Fugit hic distinctio ipsum pariatur eum?</p>
+      </div>
+    </section>
+    <!-- volunteer and donate -->
+    <div class="main-buttons container-fluid block-area">
+      <a
+        class="main-btn donate-btn btn-link"
+        href="all-ngo-display.html"
+        type="button"
+        >DONATE</a
+      >
+      <a
+        class="main-btn volunteer-btn btn-link"
+        href="Contact.html"
+        type="button"
+        >VOLUNTEER</a
+      >
+      <a
+        class="main-btn share-food btn-link"
+        href="all-ngo-display.html"
+        type="button"
+        >SHARE FOOD</a
+      >
+    </div>
+
+    <!-- footer -->
+
+    <footer class="block-area footer-section" style="padding: 0;">
+      <div class="main-content" style="padding: 0;">
+        <div class="left box"style="padding: 0; ">
+            <div class="social " style="padding: 0;">
+              <a style="margin: 5%; width: 15%;"
+                class="icon-footer"
+                href="D:\YUKTI Work\PROJECTS\social_welfare\Donate-trade\convForm\index.html"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a style="margin: 5%; width: 15%;" class="icon-footer" href="#"
+                ><span class="fab fa-twitter"></span
+              ></a>
+              <a style="margin: 5%; width: 15%;"class="icon-footer" href="#"
+                ><span class="fab fa-instagram"></span
+              ></a>
+              <a style="margin: 5%; width: 15%;"class="icon-footer" href="#"
+                ><span class="fab fa-linkedin"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+
+  <script type="text/javascript">
+    portfolioList = document.querySelectorAll(".portfolio-box");
+    portfolioList.forEach(function (portfolioPic) {
+      portfolioPic.addEventListener("click", function () {
+        bg = this.style.backgroundImage;
+        document.getElementById("port_pop_pic_bg").classList.add("active");
+        document.getElementById("port_pop_pic").style.backgroundImage = bg;
+        document.getElementById("port_pop_pic").classList.add("active");
+      });
+    });
+    document
+      .getElementById("port_pop_pic_bg")
+      .addEventListener("click", function () {
+        document.getElementById("port_pop_pic_bg").classList.remove("active");
+        document.getElementById("port_pop_pic").classList.remove("active");
+      });
+  </script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+</html>
